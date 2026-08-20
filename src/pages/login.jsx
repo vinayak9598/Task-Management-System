@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
 
@@ -61,7 +62,7 @@ function Login() {
                         </div>
 
                         {/* Login Button */}
-                        <button
+                       <button
                             type="submit"
                             className="btn login-button"
                         >
@@ -69,8 +70,8 @@ function Login() {
                         </button>
 
                         <div className="login-links">
-                            <a href="/signup">Signup</a>
-                            <a href="/forgot-password">Forgot password?</a>
+                            <Link to="/signup">Signup</Link>
+                            <Link to="/forgot-password">Forgot password?</Link>
                         </div>
 
 

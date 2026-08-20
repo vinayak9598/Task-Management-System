@@ -1,13 +1,16 @@
 import { useState } from 'react'
-import './App.css'
 import Login from './pages/login'
-import './pages/login.css'
 import Signup from './pages/signup'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-        <Login />
-         //<Signup />
+  return ( 
+<BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
     );
 }
 
